@@ -130,8 +130,7 @@ class MUCBot(sleekxmpp.ClientXMPP):
         """
         if presence['muc']['nick'] != self.nick:
             self.send_message(mto=presence['from'].bare,
-                              mbody="Hello, %s %s" % (presence['muc']['role'],
-                                                      presence['muc']['nick']),
+                              mbody="Hello, %s" % presence['muc']['nick'],
                               mtype='groupchat')
 
 
