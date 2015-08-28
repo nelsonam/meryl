@@ -1,0 +1,6 @@
+*.pyc
+"*.pyc"
+*.log
+"*.log"
+*.db
+config.py
